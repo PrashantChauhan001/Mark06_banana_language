@@ -7,8 +7,6 @@ const button = document.querySelector("#btn");
 
 button.addEventListener("click", () => console.log(readValue()));
 
-console.log("test")
-
 // console.log(document.querySelector("textarea"))
 // console.log(document.querySelector(".btn"))
 // console.log(document.querySelector("#btn"))
