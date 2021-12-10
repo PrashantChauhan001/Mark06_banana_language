@@ -7,9 +7,9 @@ const button = document.querySelector("#btn");
 
 const translate = () => {
     let line = readValue();
-    fetch("https://api.funtranslations.com/translate/yoda.json?text=" + line)
+    fetch("https://api.funtranslations.com/translate/minion.json?text=" + line)
         .then(res => res.json())
-        .then(data => (document.querySelector(".result").innerText = data.contents.text))
+        .then(data => (document.querySelector(".result").innerText = data.contents.translated))
         .catch(err => console.log(err))
 }
 // const translate = () => {
